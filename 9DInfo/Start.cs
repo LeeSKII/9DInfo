@@ -12,8 +12,11 @@ namespace _9DInfo
     {
         public override int Execute(params string[] parameters)
         {
-            Form9D form9D = new Form9D();
-            form9D.Show();
+            //Form9D form9D = new Form9D();
+            //form9D.Show();
+            Query9DInfoForm query9DInfoForm = new Query9DInfoForm();
+            query9DInfoForm.Show();
+
             return 0;
         }
     }

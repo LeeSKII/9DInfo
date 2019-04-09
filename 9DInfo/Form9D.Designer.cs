@@ -52,6 +52,7 @@
             this.EleName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.person = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.info = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ButSelect = new System.Windows.Forms.Button();
             this.tabControlInfo.SuspendLayout();
             this.tabPage1Quality.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQuality)).BeginInit();
@@ -266,12 +267,23 @@
             this.info.Name = "info";
             this.info.Width = 500;
             // 
+            // ButSelect
+            // 
+            this.ButSelect.Location = new System.Drawing.Point(383, 140);
+            this.ButSelect.Name = "ButSelect";
+            this.ButSelect.Size = new System.Drawing.Size(75, 23);
+            this.ButSelect.TabIndex = 2;
+            this.ButSelect.Text = "选择";
+            this.ButSelect.UseVisualStyleBackColor = true;
+            this.ButSelect.Click += new System.EventHandler(this.ButSelect_Click);
+            // 
             // Form9D
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(800, 231);
+            this.Controls.Add(this.ButSelect);
             this.Controls.Add(this.ButQuery);
             this.Controls.Add(this.tabControlInfo);
             this.Name = "Form9D";
@@ -312,5 +324,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn EleName;
         private System.Windows.Forms.DataGridViewTextBoxColumn person;
         private System.Windows.Forms.DataGridViewTextBoxColumn info;
+        private System.Windows.Forms.Button ButSelect;
     }
 }

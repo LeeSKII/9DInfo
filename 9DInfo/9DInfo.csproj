@@ -54,12 +54,21 @@
     <Compile Include="Form9D.Designer.cs">
       <DependentUpon>Form9D.cs</DependentUpon>
     </Compile>
+    <Compile Include="Query9DInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Query9DInfoForm.Designer.cs">
+      <DependentUpon>Query9DInfoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Start.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form9D.resx">
       <DependentUpon>Form9D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query9DInfoForm.resx">
+      <DependentUpon>Query9DInfoForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -11,9 +11,7 @@ namespace _9DInfo
     public class Start:AddInPlugin
     {
         public override int Execute(params string[] parameters)
-        {
-            //Form9D form9D = new Form9D();
-            //form9D.Show();
+        {           
             Query9DInfoForm query9DInfoForm = new Query9DInfoForm();
             query9DInfoForm.Show();
 

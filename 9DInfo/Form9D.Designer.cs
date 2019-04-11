@@ -28,52 +28,66 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.tabControlInfo = new System.Windows.Forms.TabControl();
+            this.TCLofForm9D = new System.Windows.Forms.TabControl();
             this.tabPage1Quality = new System.Windows.Forms.TabPage();
             this.dataGridViewQuality = new System.Windows.Forms.DataGridView();
+            this.eleIdofQuality = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameofQuality = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.modifyDateofQuality = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.describleofQuality = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage2Safety = new System.Windows.Forms.TabPage();
             this.dataGridViewSafety = new System.Windows.Forms.DataGridView();
+            this.eleIdofSafety = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameofSafety = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.modifyDateofSafety = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.describeofSafety = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage3Construct = new System.Windows.Forms.TabPage();
+            this.dataGridViewConstruct = new System.Windows.Forms.DataGridView();
+            this.eleIdofConstruct = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameofConstruct = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.modifyDateofConstruct = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.ButQuery = new System.Windows.Forms.Button();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EleName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.person = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.info = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage4Cost = new System.Windows.Forms.TabPage();
+            this.dataGridViewCost = new System.Windows.Forms.DataGridView();
+            this.eleIdofCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameofCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.modifyDateofCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.describeofCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage5Data = new System.Windows.Forms.TabPage();
+            this.dataGridViewData = new System.Windows.Forms.DataGridView();
+            this.eleIdofData = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameofData = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.modifyDateofData = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.describeofData = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ButSelect = new System.Windows.Forms.Button();
-            this.tabControlInfo.SuspendLayout();
+            this.ButOK = new System.Windows.Forms.Button();
+            this.TCLofForm9D.SuspendLayout();
             this.tabPage1Quality.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQuality)).BeginInit();
             this.tabPage2Safety.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSafety)).BeginInit();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.tabPage3Construct.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewConstruct)).BeginInit();
+            this.tabPage4Cost.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCost)).BeginInit();
+            this.tabPage5Data.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewData)).BeginInit();
             this.SuspendLayout();
             // 
-            // tabControlInfo
+            // TCLofForm9D
             // 
-            this.tabControlInfo.Controls.Add(this.tabPage1Quality);
-            this.tabControlInfo.Controls.Add(this.tabPage2Safety);
-            this.tabControlInfo.Controls.Add(this.tabPage3);
-            this.tabControlInfo.Controls.Add(this.tabPage4);
-            this.tabControlInfo.Controls.Add(this.tabPage5);
-            this.tabControlInfo.Location = new System.Drawing.Point(12, 12);
-            this.tabControlInfo.Name = "tabControlInfo";
-            this.tabControlInfo.SelectedIndex = 0;
-            this.tabControlInfo.Size = new System.Drawing.Size(776, 106);
-            this.tabControlInfo.TabIndex = 0;
+            this.TCLofForm9D.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TCLofForm9D.Controls.Add(this.tabPage1Quality);
+            this.TCLofForm9D.Controls.Add(this.tabPage2Safety);
+            this.TCLofForm9D.Controls.Add(this.tabPage3Construct);
+            this.TCLofForm9D.Controls.Add(this.tabPage4Cost);
+            this.TCLofForm9D.Controls.Add(this.tabPage5Data);
+            this.TCLofForm9D.Location = new System.Drawing.Point(12, 12);
+            this.TCLofForm9D.Name = "TCLofForm9D";
+            this.TCLofForm9D.SelectedIndex = 0;
+            this.TCLofForm9D.Size = new System.Drawing.Size(776, 106);
+            this.TCLofForm9D.TabIndex = 0;
             // 
             // tabPage1Quality
             // 
@@ -90,28 +104,45 @@
             // 
             this.dataGridViewQuality.AllowUserToAddRows = false;
             this.dataGridViewQuality.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.dataGridViewQuality.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewQuality.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewQuality.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewQuality.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.EleName,
-            this.person,
-            this.info});
+            this.eleIdofQuality,
+            this.nameofQuality,
+            this.modifyDateofQuality,
+            this.describleofQuality});
             this.dataGridViewQuality.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewQuality.Location = new System.Drawing.Point(3, 3);
             this.dataGridViewQuality.Name = "dataGridViewQuality";
-            this.dataGridViewQuality.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dataGridViewQuality.RowTemplate.Height = 23;
             this.dataGridViewQuality.Size = new System.Drawing.Size(762, 74);
             this.dataGridViewQuality.TabIndex = 0;
+            // 
+            // eleIdofQuality
+            // 
+            this.eleIdofQuality.HeaderText = "ID";
+            this.eleIdofQuality.Name = "eleIdofQuality";
+            this.eleIdofQuality.ReadOnly = true;
+            // 
+            // nameofQuality
+            // 
+            this.nameofQuality.FillWeight = 150F;
+            this.nameofQuality.HeaderText = "名称";
+            this.nameofQuality.Name = "nameofQuality";
+            this.nameofQuality.ReadOnly = true;
+            this.nameofQuality.Width = 150;
+            // 
+            // modifyDateofQuality
+            // 
+            this.modifyDateofQuality.HeaderText = "修改时间";
+            this.modifyDateofQuality.Name = "modifyDateofQuality";
+            this.modifyDateofQuality.ReadOnly = true;
+            // 
+            // describleofQuality
+            // 
+            this.describleofQuality.FillWeight = 500F;
+            this.describleofQuality.HeaderText = "说明";
+            this.describleofQuality.Name = "describleofQuality";
+            this.describleofQuality.Width = 500;
             // 
             // tabPage2Safety
             // 
@@ -130,12 +161,10 @@
             this.dataGridViewSafety.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dataGridViewSafety.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewSafety.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6});
+            this.eleIdofSafety,
+            this.nameofSafety,
+            this.modifyDateofSafety,
+            this.describeofSafety});
             this.dataGridViewSafety.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewSafety.Location = new System.Drawing.Point(3, 3);
             this.dataGridViewSafety.Name = "dataGridViewSafety";
@@ -143,187 +172,265 @@
             this.dataGridViewSafety.Size = new System.Drawing.Size(762, 74);
             this.dataGridViewSafety.TabIndex = 0;
             // 
+            // eleIdofSafety
+            // 
+            this.eleIdofSafety.HeaderText = "ID";
+            this.eleIdofSafety.Name = "eleIdofSafety";
+            // 
+            // nameofSafety
+            // 
+            this.nameofSafety.HeaderText = "名称";
+            this.nameofSafety.Name = "nameofSafety";
+            this.nameofSafety.Width = 150;
+            // 
+            // modifyDateofSafety
+            // 
+            this.modifyDateofSafety.HeaderText = "修改时间";
+            this.modifyDateofSafety.Name = "modifyDateofSafety";
+            // 
+            // describeofSafety
+            // 
+            this.describeofSafety.HeaderText = "说明";
+            this.describeofSafety.Name = "describeofSafety";
+            this.describeofSafety.Width = 500;
+            // 
+            // tabPage3Construct
+            // 
+            this.tabPage3Construct.Controls.Add(this.dataGridViewConstruct);
+            this.tabPage3Construct.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3Construct.Name = "tabPage3Construct";
+            this.tabPage3Construct.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3Construct.Size = new System.Drawing.Size(768, 80);
+            this.tabPage3Construct.TabIndex = 2;
+            this.tabPage3Construct.Text = "建造";
+            this.tabPage3Construct.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewConstruct
+            // 
+            this.dataGridViewConstruct.AllowUserToAddRows = false;
+            this.dataGridViewConstruct.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dataGridViewConstruct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewConstruct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.eleIdofConstruct,
+            this.nameofConstruct,
+            this.modifyDateofConstruct,
+            this.Column1});
+            this.dataGridViewConstruct.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewConstruct.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewConstruct.Name = "dataGridViewConstruct";
+            this.dataGridViewConstruct.RowTemplate.Height = 23;
+            this.dataGridViewConstruct.Size = new System.Drawing.Size(762, 74);
+            this.dataGridViewConstruct.TabIndex = 0;
+            // 
+            // eleIdofConstruct
+            // 
+            this.eleIdofConstruct.HeaderText = "ID";
+            this.eleIdofConstruct.Name = "eleIdofConstruct";
+            // 
+            // nameofConstruct
+            // 
+            this.nameofConstruct.HeaderText = "名称";
+            this.nameofConstruct.Name = "nameofConstruct";
+            this.nameofConstruct.Width = 150;
+            // 
+            // modifyDateofConstruct
+            // 
+            this.modifyDateofConstruct.HeaderText = "修改时间";
+            this.modifyDateofConstruct.Name = "modifyDateofConstruct";
+            // 
             // Column1
             // 
-            this.Column1.HeaderText = "a";
+            this.Column1.HeaderText = "说明";
             this.Column1.Name = "Column1";
+            this.Column1.Width = 500;
             // 
-            // Column2
+            // tabPage4Cost
             // 
-            this.Column2.HeaderText = "b";
-            this.Column2.Name = "Column2";
+            this.tabPage4Cost.Controls.Add(this.dataGridViewCost);
+            this.tabPage4Cost.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4Cost.Name = "tabPage4Cost";
+            this.tabPage4Cost.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4Cost.Size = new System.Drawing.Size(768, 80);
+            this.tabPage4Cost.TabIndex = 3;
+            this.tabPage4Cost.Text = "成本";
+            this.tabPage4Cost.UseVisualStyleBackColor = true;
             // 
-            // Column3
+            // dataGridViewCost
             // 
-            this.Column3.HeaderText = "c";
-            this.Column3.Name = "Column3";
+            this.dataGridViewCost.AllowUserToAddRows = false;
+            this.dataGridViewCost.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dataGridViewCost.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCost.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.eleIdofCost,
+            this.nameofCost,
+            this.modifyDateofCost,
+            this.describeofCost});
+            this.dataGridViewCost.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewCost.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewCost.Name = "dataGridViewCost";
+            this.dataGridViewCost.RowTemplate.Height = 23;
+            this.dataGridViewCost.Size = new System.Drawing.Size(762, 74);
+            this.dataGridViewCost.TabIndex = 0;
             // 
-            // Column4
+            // eleIdofCost
             // 
-            this.Column4.HeaderText = "d";
-            this.Column4.Name = "Column4";
+            this.eleIdofCost.HeaderText = "ID";
+            this.eleIdofCost.Name = "eleIdofCost";
+            this.eleIdofCost.ReadOnly = true;
             // 
-            // Column5
+            // nameofCost
             // 
-            this.Column5.HeaderText = "e";
-            this.Column5.Name = "Column5";
+            this.nameofCost.HeaderText = "名称";
+            this.nameofCost.Name = "nameofCost";
+            this.nameofCost.ReadOnly = true;
+            this.nameofCost.Width = 150;
             // 
-            // Column6
+            // modifyDateofCost
             // 
-            this.Column6.HeaderText = "f";
-            this.Column6.Name = "Column6";
+            this.modifyDateofCost.HeaderText = "修改时间";
+            this.modifyDateofCost.Name = "modifyDateofCost";
+            this.modifyDateofCost.ReadOnly = true;
             // 
-            // tabPage3
+            // describeofCost
             // 
-            this.tabPage3.Controls.Add(this.dataGridView2);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(768, 80);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.describeofCost.HeaderText = "说明";
+            this.describeofCost.Name = "describeofCost";
+            this.describeofCost.Width = 500;
             // 
-            // dataGridView2
+            // tabPage5Data
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column7,
-            this.Column8,
-            this.Column9});
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 23;
-            this.dataGridView2.Size = new System.Drawing.Size(762, 74);
-            this.dataGridView2.TabIndex = 0;
+            this.tabPage5Data.Controls.Add(this.dataGridViewData);
+            this.tabPage5Data.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5Data.Name = "tabPage5Data";
+            this.tabPage5Data.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5Data.Size = new System.Drawing.Size(768, 80);
+            this.tabPage5Data.TabIndex = 4;
+            this.tabPage5Data.Text = "数据";
+            this.tabPage5Data.UseVisualStyleBackColor = true;
             // 
-            // Column7
+            // dataGridViewData
             // 
-            this.Column7.HeaderText = "a";
-            this.Column7.Name = "Column7";
+            this.dataGridViewData.AllowUserToAddRows = false;
+            this.dataGridViewData.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dataGridViewData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.eleIdofData,
+            this.nameofData,
+            this.modifyDateofData,
+            this.describeofData});
+            this.dataGridViewData.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewData.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewData.Name = "dataGridViewData";
+            this.dataGridViewData.RowTemplate.Height = 23;
+            this.dataGridViewData.Size = new System.Drawing.Size(762, 74);
+            this.dataGridViewData.TabIndex = 0;
             // 
-            // Column8
+            // eleIdofData
             // 
-            this.Column8.HeaderText = "b";
-            this.Column8.Name = "Column8";
+            this.eleIdofData.HeaderText = "ID";
+            this.eleIdofData.Name = "eleIdofData";
+            this.eleIdofData.ReadOnly = true;
             // 
-            // Column9
+            // nameofData
             // 
-            this.Column9.HeaderText = "c";
-            this.Column9.Name = "Column9";
+            this.nameofData.HeaderText = "名称";
+            this.nameofData.Name = "nameofData";
+            this.nameofData.ReadOnly = true;
+            this.nameofData.Width = 150;
             // 
-            // tabPage4
+            // modifyDateofData
             // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(768, 80);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "tabPage4";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.modifyDateofData.HeaderText = "修改时间";
+            this.modifyDateofData.Name = "modifyDateofData";
+            this.modifyDateofData.ReadOnly = true;
             // 
-            // tabPage5
+            // describeofData
             // 
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(768, 80);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "tabPage5";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // ButQuery
-            // 
-            this.ButQuery.Location = new System.Drawing.Point(42, 141);
-            this.ButQuery.Name = "ButQuery";
-            this.ButQuery.Size = new System.Drawing.Size(75, 23);
-            this.ButQuery.TabIndex = 1;
-            this.ButQuery.Text = "查询";
-            this.ButQuery.UseVisualStyleBackColor = true;
-            this.ButQuery.Click += new System.EventHandler(this.ButQuery_Click);
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "构件ID";
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            this.ID.ToolTipText = "三维模型的构件ID标志符";
-            // 
-            // EleName
-            // 
-            this.EleName.HeaderText = "构件名称";
-            this.EleName.Name = "EleName";
-            this.EleName.ReadOnly = true;
-            // 
-            // person
-            // 
-            this.person.HeaderText = "责任人";
-            this.person.Name = "person";
-            // 
-            // info
-            // 
-            this.info.HeaderText = "备注";
-            this.info.Name = "info";
-            this.info.Width = 500;
+            this.describeofData.HeaderText = "说明";
+            this.describeofData.Name = "describeofData";
+            this.describeofData.Width = 500;
             // 
             // ButSelect
             // 
-            this.ButSelect.Location = new System.Drawing.Point(383, 140);
+            this.ButSelect.Location = new System.Drawing.Point(176, 139);
             this.ButSelect.Name = "ButSelect";
             this.ButSelect.Size = new System.Drawing.Size(75, 23);
             this.ButSelect.TabIndex = 2;
-            this.ButSelect.Text = "选择";
+            this.ButSelect.Text = "关注";
             this.ButSelect.UseVisualStyleBackColor = true;
             this.ButSelect.Click += new System.EventHandler(this.ButSelect_Click);
+            // 
+            // ButOK
+            // 
+            this.ButOK.Location = new System.Drawing.Point(50, 139);
+            this.ButOK.Name = "ButOK";
+            this.ButOK.Size = new System.Drawing.Size(75, 23);
+            this.ButOK.TabIndex = 3;
+            this.ButOK.Text = "确认";
+            this.ButOK.UseVisualStyleBackColor = true;
+            this.ButOK.Click += new System.EventHandler(this.ButOK_Click);
             // 
             // Form9D
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(800, 231);
+            this.ClientSize = new System.Drawing.Size(800, 171);
+            this.Controls.Add(this.ButOK);
             this.Controls.Add(this.ButSelect);
-            this.Controls.Add(this.ButQuery);
-            this.Controls.Add(this.tabControlInfo);
+            this.Controls.Add(this.TCLofForm9D);
             this.Name = "Form9D";
             this.Text = "Form9D";
-            this.tabControlInfo.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.Form9D_Load);
+            this.TCLofForm9D.ResumeLayout(false);
             this.tabPage1Quality.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQuality)).EndInit();
             this.tabPage2Safety.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSafety)).EndInit();
-            this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.tabPage3Construct.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewConstruct)).EndInit();
+            this.tabPage4Cost.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCost)).EndInit();
+            this.tabPage5Data.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewData)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControlInfo;
+        private System.Windows.Forms.TabControl TCLofForm9D;
         private System.Windows.Forms.TabPage tabPage1Quality;
-        private System.Windows.Forms.DataGridView dataGridViewQuality;
         private System.Windows.Forms.TabPage tabPage2Safety;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TabPage tabPage3Construct;
+        private System.Windows.Forms.TabPage tabPage4Cost;
+        private System.Windows.Forms.TabPage tabPage5Data;
         private System.Windows.Forms.DataGridView dataGridViewSafety;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.Button ButQuery;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EleName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn person;
-        private System.Windows.Forms.DataGridViewTextBoxColumn info;
+        private System.Windows.Forms.DataGridView dataGridViewConstruct;
         private System.Windows.Forms.Button ButSelect;
+        private System.Windows.Forms.DataGridViewTextBoxColumn eleIdofSafety;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameofSafety;
+        private System.Windows.Forms.DataGridViewTextBoxColumn modifyDateofSafety;
+        private System.Windows.Forms.DataGridViewTextBoxColumn describeofSafety;
+        private System.Windows.Forms.DataGridViewTextBoxColumn eleIdofConstruct;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameofConstruct;
+        private System.Windows.Forms.DataGridViewTextBoxColumn modifyDateofConstruct;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridView dataGridViewCost;
+        private System.Windows.Forms.DataGridViewTextBoxColumn eleIdofCost;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameofCost;
+        private System.Windows.Forms.DataGridViewTextBoxColumn modifyDateofCost;
+        private System.Windows.Forms.DataGridViewTextBoxColumn describeofCost;
+        private System.Windows.Forms.DataGridView dataGridViewData;
+        private System.Windows.Forms.DataGridViewTextBoxColumn eleIdofData;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameofData;
+        private System.Windows.Forms.DataGridViewTextBoxColumn modifyDateofData;
+        private System.Windows.Forms.DataGridViewTextBoxColumn describeofData;
+        private System.Windows.Forms.Button ButOK;
+        private System.Windows.Forms.DataGridView dataGridViewQuality;
+        private System.Windows.Forms.DataGridViewTextBoxColumn eleIdofQuality;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameofQuality;
+        private System.Windows.Forms.DataGridViewTextBoxColumn modifyDateofQuality;
+        private System.Windows.Forms.DataGridViewTextBoxColumn describleofQuality;
     }
 }

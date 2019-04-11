@@ -54,6 +54,12 @@
     <Compile Include="Form9D.Designer.cs">
       <DependentUpon>Form9D.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modify9DInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modify9DInfoForm.Designer.cs">
+      <DependentUpon>Modify9DInfoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Query9DInfoForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Form9D.resx">
       <DependentUpon>Form9D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modify9DInfoForm.resx">
+      <DependentUpon>Modify9DInfoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Query9DInfoForm.resx">
       <DependentUpon>Query9DInfoForm.cs</DependentUpon>

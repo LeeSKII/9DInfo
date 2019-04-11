@@ -120,7 +120,7 @@
             this.tabPage2Safety.Location = new System.Drawing.Point(4, 22);
             this.tabPage2Safety.Name = "tabPage2Safety";
             this.tabPage2Safety.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2Safety.Size = new System.Drawing.Size(787, 411);
+            this.tabPage2Safety.Size = new System.Drawing.Size(787, 415);
             this.tabPage2Safety.TabIndex = 1;
             this.tabPage2Safety.Text = "安全";
             this.tabPage2Safety.UseVisualStyleBackColor = true;
@@ -141,7 +141,7 @@
             this.DGV2Safety.Name = "DGV2Safety";
             this.DGV2Safety.ReadOnly = true;
             this.DGV2Safety.RowTemplate.Height = 23;
-            this.DGV2Safety.Size = new System.Drawing.Size(781, 405);
+            this.DGV2Safety.Size = new System.Drawing.Size(781, 409);
             this.DGV2Safety.TabIndex = 0;
             // 
             // C1IDofSafety
@@ -178,7 +178,7 @@
             this.tabPage3Construct.Location = new System.Drawing.Point(4, 22);
             this.tabPage3Construct.Name = "tabPage3Construct";
             this.tabPage3Construct.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3Construct.Size = new System.Drawing.Size(787, 411);
+            this.tabPage3Construct.Size = new System.Drawing.Size(787, 415);
             this.tabPage3Construct.TabIndex = 2;
             this.tabPage3Construct.Text = "建造";
             this.tabPage3Construct.UseVisualStyleBackColor = true;
@@ -191,7 +191,7 @@
             this.DGV3Construct.Location = new System.Drawing.Point(3, 3);
             this.DGV3Construct.Name = "DGV3Construct";
             this.DGV3Construct.RowTemplate.Height = 23;
-            this.DGV3Construct.Size = new System.Drawing.Size(781, 405);
+            this.DGV3Construct.Size = new System.Drawing.Size(781, 409);
             this.DGV3Construct.TabIndex = 0;
             // 
             // tabPage4Cost
@@ -200,7 +200,7 @@
             this.tabPage4Cost.Location = new System.Drawing.Point(4, 22);
             this.tabPage4Cost.Name = "tabPage4Cost";
             this.tabPage4Cost.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4Cost.Size = new System.Drawing.Size(787, 411);
+            this.tabPage4Cost.Size = new System.Drawing.Size(787, 415);
             this.tabPage4Cost.TabIndex = 3;
             this.tabPage4Cost.Text = "成本";
             this.tabPage4Cost.UseVisualStyleBackColor = true;
@@ -213,7 +213,7 @@
             this.DGV4Cost.Location = new System.Drawing.Point(3, 3);
             this.DGV4Cost.Name = "DGV4Cost";
             this.DGV4Cost.RowTemplate.Height = 23;
-            this.DGV4Cost.Size = new System.Drawing.Size(781, 405);
+            this.DGV4Cost.Size = new System.Drawing.Size(781, 409);
             this.DGV4Cost.TabIndex = 0;
             // 
             // tabPage5Data
@@ -222,7 +222,7 @@
             this.tabPage5Data.Location = new System.Drawing.Point(4, 22);
             this.tabPage5Data.Name = "tabPage5Data";
             this.tabPage5Data.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5Data.Size = new System.Drawing.Size(787, 411);
+            this.tabPage5Data.Size = new System.Drawing.Size(787, 415);
             this.tabPage5Data.TabIndex = 4;
             this.tabPage5Data.Text = "数据";
             this.tabPage5Data.UseVisualStyleBackColor = true;
@@ -235,7 +235,7 @@
             this.DGV5Data.Location = new System.Drawing.Point(3, 3);
             this.DGV5Data.Name = "DGV5Data";
             this.DGV5Data.RowTemplate.Height = 23;
-            this.DGV5Data.Size = new System.Drawing.Size(781, 405);
+            this.DGV5Data.Size = new System.Drawing.Size(781, 409);
             this.DGV5Data.TabIndex = 0;
             // 
             // ButQuery

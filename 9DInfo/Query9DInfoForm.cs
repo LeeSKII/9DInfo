@@ -237,7 +237,57 @@ namespace _9DInfo
 
         private void DGV1Quality_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
-            MessageBox.Show("编辑完成", "完成");
+            TabPage curTabPage = this.TCL1OfQF.SelectedTab;
+            string pageName = curTabPage.Text;
+            string sId = "",sName="",sModifyDate="",sDescribe="";
+            foreach (Control control in curTabPage.Controls)
+            {
+                if (control is DataGridView)
+                {
+                    DataGridView dataGridView = (DataGridView)control;
+                    int curRowIndex = dataGridView.CurrentCell.RowIndex;
+                    sId = dataGridView.Rows[curRowIndex].Cells[0].Value.ToString();
+                    sName= dataGridView.Rows[curRowIndex].Cells[1].Value.ToString();
+                    sModifyDate = dataGridView.Rows[curRowIndex].Cells[2].Value.ToString();
+                    sDescribe = dataGridView.Rows[curRowIndex].Cells[3].Value.ToString();
+                }
+            }
+            string db_tableName="";
+            switch (pageName)//表未实现
+            {
+                case "质量":
+                    db_tableName = "BIM_QualityInfo";
+                    break;
+                case "安全":
+                    break;
+                case "建造":
+                    break;
+                case "成本":
+                    break;
+                case "数据":
+                    break;           
+            }       
+            if (db_tableName == "")
+            {
+                MessageBox.Show("单元格内修改控件，表组件出现问题，联系管理员", "提示");
+                return;
+            }
+            //链接数据库操作
+            string nowDate = DateTime.Now.ToShortDateString();
+            try
+            {
+                SqlConnection con = new SqlConnection(sqlConnectInfo);
+                con.Open();
+                string cmdText = "UPDATE " +db_tableName+ " SET ModifyDate=" + "'" + nowDate + "'" +
+                    "," + "Describe=" + "'" + sDescribe + "'" + " WHERE ID=" + "'" + sId + "'";
+                SqlCommand cmd = new SqlCommand(cmdText, con);
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("更改发生错误"+ex.Message, "提示");
+            }
         }
 
         

@@ -218,16 +218,50 @@ namespace _9DInfo
             }
         }
 
-        private void ButDelete_Click(object sender, EventArgs e)//从所有表中删除对应记录
+        private void ButDelete_Click(object sender, EventArgs e)//从所有表中删除对应记录（未实现删除所有表！！！！）
         {
             TabPage tabPage = this.TCL1OfQF.SelectedTab;
             foreach (Control control in tabPage.Controls)
             {
                 if (control is DataGridView)
                 {
+                    DataGridView dataGridView = (DataGridView)control;
+                    DataGridViewSelectedRowCollection selectedRows = dataGridView.SelectedRows;
+                    if (selectedRows.Count <= 0)
+                    {
+                        MessageBox.Show("未选中任何行数据删除", "提示");
+                        return;
+                    }
+                    else
+                    {
+                        DialogResult result = MessageBox.Show("该删除操作会删除该构件下所有的记录信息且不可恢复，确认执行？", "删除",
+                            MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if(result==DialogResult.Yes)
+                        {
+                            SqlConnection con = new SqlConnection(sqlConnectInfo);
+                            con.Open();
+                            for (int i = 0; i < selectedRows.Count; i++)
+                            {
+                                try
+                                {
+                                    string id = selectedRows[i].Cells[0].Value.ToString();
+                                    string cmdText = string.Format("DELETE FROM BIM_QualityInfo WHERE ID='{0}'", id);
+                                    SqlCommand cmd = new SqlCommand(cmdText, con);
+                                    cmd.ExecuteNonQuery();
+                                    dataGridView.Rows.Remove(selectedRows[i]);//在grid中删除
+                                }
+                                catch (Exception ex)
+                                {
+                                    MessageBox.Show("删除发生错误" + ex.Message, "提示");
+                                }
 
+                            }
+                            con.Close();
+                        }                        
+                    }
                 }
             }
+            
         }
 
         private void DGV1Quality_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -253,7 +287,7 @@ namespace _9DInfo
                 }
             }
             string db_tableName="";
-            switch (pageName)//表未实现
+            switch (pageName)//根据选择的页面更新表数据，表未实现
             {
                 case "质量":
                     db_tableName = "BIM_QualityInfo";
